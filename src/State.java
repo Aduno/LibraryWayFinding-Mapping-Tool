@@ -1,5 +1,3 @@
-package MapUtil;
-
 public class State {
     protected Cube[] cubeMap;
     State(){

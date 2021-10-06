@@ -1,6 +1,3 @@
-package MapUtil;
-
-import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
@@ -19,6 +16,7 @@ public class Logic implements ActionListener {
             //Toggles on or off of being a object
             cube.setObj(!cube.isObj);
         }
+
         userInterface.updateFrame();
     }
 }

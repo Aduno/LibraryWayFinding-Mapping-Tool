@@ -1,5 +1,3 @@
-package MapUtil;
-
 import javax.swing.*;
 
 public class Cube extends JButton {
