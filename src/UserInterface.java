@@ -15,10 +15,10 @@ public class UserInterface extends JFrame{
 
         this.setTitle("Mapping Tool");
         this.setLayout(new BorderLayout());
-        this.setBounds(new Rectangle(820,800));
-        this.add(boardInterface,BorderLayout.NORTH);
-        this.add(save);
-        this.setResizable(true);
+        this.setBounds(new Rectangle((int)(BoardUI.DIMENSIONS*1.1),(int)(BoardUI.DIMENSIONS*1.1)));
+        this.add(boardInterface);
+        this.add(save, BorderLayout.SOUTH);
+        this.setResizable(false);
         this.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         this.setVisible(true);
     }

@@ -10,7 +10,7 @@ public class SaveButton extends JButton implements ActionListener{
     protected SaveButton(Cube[] map, Logic logic){
         this.setText("Save");
         this.map = map;
-        this.setMaximumSize(new Dimension(10,7));
+        this.setSize(new Dimension(10,7));
         this.addActionListener(this);
         this.setVisible(true);
     }

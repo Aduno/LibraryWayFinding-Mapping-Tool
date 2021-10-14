@@ -2,16 +2,18 @@ import javax.swing.*;
 import java.awt.*;
 
 public class BoardUI extends JLabel {
-    public static int RESOLUTION = 20;
-    public static int DIMENSIONS = 850;
+    public static int RESOLUTION = 40;
+    public static int DIMENSIONS = 900;
     private Color GRAY = new Color(0,0,0,(float)0.3);
     private Color WHITE = new Color(0,0,0,0);
-    private ImageIcon icon = new ImageIcon("C:/Users/joonl/OneDrive - University of Ottawa/University/2021_4_Fall/GNG2101/Wayfinding Components/src/MapUtil/img/Floor00.png");
+    private ImageIcon icon = new ImageIcon("C:/Users/John/Desktop/Programming/GNG2101/Mapping Tool/LibraryWayFinding-Mapping-Tool/src/MapUtil/img/Library_map.png");
     private Logic logic;
     private State state;
     protected BoardUI(Logic logic, State state){
         int scale = (int) (DIMENSIONS*0.9);
-        this.setIcon(new ImageIcon(icon.getImage().getScaledInstance((int) (DIMENSIONS*0.9),(int) (DIMENSIONS*0.9), Image.SCALE_DEFAULT)));
+        int height = icon.getIconHeight();
+        int width = icon.getIconWidth();
+        this.setIcon(new ImageIcon(icon.getImage().getScaledInstance((int)(width*0.97),(int)(height*0.97),Image.SCALE_DEFAULT)));
         this.setLayout(new GridLayout(RESOLUTION,RESOLUTION,0,0));
         this.logic = logic;
         this.state = state;
