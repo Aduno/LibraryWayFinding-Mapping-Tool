@@ -15,6 +15,7 @@ public class SaveButton extends JButton implements ActionListener{
         this.setVisible(true);
     }
 
+    //On save button click, creates a file with all the highlighted tiles
     @Override
     public void actionPerformed(ActionEvent e) {
         File file = new File("mapInfo.txt");
@@ -25,7 +26,7 @@ public class SaveButton extends JButton implements ActionListener{
             System.out.println("here");
             for(int i=0;i<map.length;i++){
                 if(map[i].isObj){
-                    pw.write(i+",");
+                    pw.write(i+"("+i%BoardUI.RESOLUTION+","+(int)(i/BoardUI.RESOLUTION)+")"+":");
                 }
             }
             pw.write("/");
