@@ -6,7 +6,7 @@ public class BoardUI extends JLabel {
     public static int DIMENSIONS = 900;
     private Color GRAY = new Color(0,0,0,(float)0.3);
     private Color WHITE = new Color(0,0,0,0);
-    private ImageIcon icon = new ImageIcon("C:/Users/John/Desktop/Programming/GNG2101/Mapping Tool/LibraryWayFinding-Mapping-Tool/src/MapUtil/img/Library_map.png");
+    private ImageIcon icon = new ImageIcon("src/MapUtil/img/Library_map.png");
     private Logic logic;
     private State state;
     protected BoardUI(Logic logic, State state){

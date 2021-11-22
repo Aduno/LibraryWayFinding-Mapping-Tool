@@ -26,10 +26,10 @@ public class SaveButton extends JButton implements ActionListener{
             System.out.println("here");
             for(int i=0;i<map.length;i++){
                 if(map[i].isObj){
-                    pw.write(i+"("+i%BoardUI.RESOLUTION+","+(int)(i/BoardUI.RESOLUTION)+")"+":");
+                    pw.write("("+i%BoardUI.RESOLUTION+","+(int)(i/BoardUI.RESOLUTION)+")"+":");
                 }
             }
-            pw.write("/");
+//            pw.write("/");
             pw.close();
         }catch(IOException exception){
             System.out.println("failed");
